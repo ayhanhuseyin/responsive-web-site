@@ -1,0 +1,440 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(227, 219, 219) !important;
+}
+
+.navbar {
+    height: 70px;
+    background-color: rgb(209, 18, 56);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    margin-left: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.navbar-logo a {
+    font-size: 27px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 8px;
+}
+
+.navbar-items li a {
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    display: flex;
+}
+
+.navbar-items li:nth-of-type(1) {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.navbar-items li:nth-of-type(1)~li a:hover {
+    opacity: 0.9;
+    ;
+    border-bottom: 1px lightgray solid;
+    transition: all 0.1s ease-in-out;
+}
+
+.access {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.access div {
+    padding: 4px 8px;
+    border: 1px lightblue solid;
+    box-shadow: 1px 1px 3px black;
+
+}
+
+.access div:hover {
+    box-shadow: 2px 0px 10px black;
+    border: 2px black solid;
+}
+
+.access div a {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Btn {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: crimson;
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+/* hover effect on button width */
+.Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+/* hover effect button's text */
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+/* button click effect*/
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+/* side menu start*/
+.menu-title {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: whitesmoke;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -35px;
+    padding-left: 20px;
+    gap: 5px;
+    border-top: 1px solid black;
+}
+
+.menu-items:last-child {
+    border-bottom: 1px black solid;
+}
+
+.menu-items li:hover {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    box-shadow: 1px 0px 10px whitesmoke;
+}
+
+.menu-items li a {
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-items li a i {
+    font-size: 18px;
+    margin-right: 15px;
+    color: rgb(7, 7, 7);
+}
+
+/*side menu end*/
+
+
+/* home section start */
+.home-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.home-title {
+    font-size: 50px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+    width: 100%;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-content-main {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: larger;
+    margin-bottom: 20px;
+    color: rgb(51, 46, 46);
+    text-align: start;
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.image1 {
+    border: double 1px black;
+}
+
+.image2 {
+    border: 2px black solid;
+}
+
+.image3 {
+    margin-left: 200px;
+    margin-top: 10px;
+    border: 1px black solid;
+}
+
+.logos {
+    margin-top: 150px;
+}
+
+.logos li {
+    border: 1px black solid;
+    margin-bottom: 5px;
+}
+
+.logos li a {
+    display: block;
+    align-items: center;
+    padding: 6px;
+}
+
+.logos li a i {
+    font-size: larger;
+    margin-right: 3px;
+}
+
+.fa-user {
+    color: white;
+    margin-right: 12px;
+    font-size: larger;
+}
+
+.final-line {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(211, 199, 199);
+}
+
+.final-line span {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+
+/* home section end */
+
+/* responsive design start */
+@media screen and (max-width: 1262px) {
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar-items li {
+        display: none;
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    .access div:hover {
+        border: 1px solid white;
+    }
+
+    .btn {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar-items li {
+        display: none;
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    .Btn:hover {
+        width: 90px;
+    }
+
+    .access div:hover {
+        border: 1px solid white;
+    }
+
+    .btn {
+        display: block !important;
+    }
+
+    .access {
+        display: none;
+    }
+
+    .Btn {
+        display: flex;
+    }
+
+    .navbar-logo a {
+        font-size: 24px;
+    }
+
+    .offcanvas {
+        width: 290px !important;
+    }
+
+    .home-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image1 {
+        height: 220px;
+        width: 100%;
+        margin-bottom: -20px;
+    }
+
+    .image2 {
+        height: 220px;
+        width: 100%;
+    }
+
+    .image3 {
+        height: 220px;
+        width: 100%;
+        margin-left: -1px;
+    }
+
+    .alt-images {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: -15px;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .final-line {
+        background-color: rgb(211, 186, 186);
+    }
+
+    .logos li a {
+        padding: 4px;
+    }
+
+}
+
+
+
+/* responsive design end */
